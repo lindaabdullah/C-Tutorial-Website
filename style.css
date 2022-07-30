@@ -1,0 +1,362 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 17px;
+    font-family: fantasy;
+}
+
+body {
+    background-color: rgba(207, 228, 245, 0.884);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.leftPadding {
+    padding-left: 4%;
+}
+
+.leftContent {
+    width: 20%;
+    background-color: lightblue;
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftContent header {
+    padding: 2%;
+    box-shadow: 0px 1px 1.5px gray;    
+}
+
+
+.leftContent ul{
+    height: 100%; 
+    width: 100%;
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+
+
+.leftContent ul a li {
+    padding-top: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.leftContent ul a li:hover{
+    background-color: lightgrey;
+    padding-right: auto;
+}
+
+.myContent {
+    width: 90%;
+    /* width: 100%; */
+    margin-bottom: 10px;
+
+    /* float: left; */
+}
+
+
+.myContent {
+    width: 80%;
+    /* width: 100%; */
+    margin-bottom: 10px;
+    /* float: left; */
+    /* margin: 0 auto; */
+}
+
+.mainHeader {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mainHeader img {
+    width: 100%;    
+    border-radius: 5px;   
+}
+
+.navBar {
+    background-color: cadetblue;
+    height: 20px;
+    /* border-radius: 10px; */
+    padding: 1%;
+    list-style: none;
+    text-align: center;
+}
+
+.navBar li {
+    display: inline;
+    padding: 2%;
+}
+
+.navBar a:hover {
+    background-color: darkcyan;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+button {
+    padding: 1%;
+}
+
+.quizquestion {
+    padding-top: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quizquestion span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    /* width: 70%; */
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin-top: 10px;  
+}
+
+section header {
+
+    width: 100%;
+    font-size: 28px;
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.fontArial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+    padding: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+
+    /* overflow-y: scroll; 
+    height: 100%; */
+
+    overflow-y: scroll;
+    height: 100%;
+    display: flex;
+    /* margin: 0 auto; */
+    justify-content: center;
+
+}
+
+
+.listHeader {
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+#introVideo {
+    padding-bottom: 10px;
+}
+
+pre {
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    
+}
+
+main {
+    overflow: hidden;
+}
+
+.code {
+    padding: 10px;
+}
+
+#example1 {
+    display: flex;
+    flex-direction: column;
+}
+
+code, code * {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.rightContent {
+    width: 30%;
+    float: left;
+    height: fit-content;
+}
+
+.rightContentText {
+    word-wrap: break-word;
+}
+
+.popQuiz {
+    margin: 100px 0px;
+    background-color: whitesmoke;
+    height: 30%;
+    width: 300px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid black;
+}
+
+.popQuiz header {
+    /* padding: 5%; */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    /* margin: 0 auto; */
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 14px;
+    }
+    ::-webkit-scrollbar {
+        width: 7px;
+      }
+    .leftContent {
+        width: 24%;
+    }
+    .listHeader {
+        font-size: 15px;
+    }
+
+    .mainHeader {
+        /* width: 95%; */
+        width: 80%;
+
+        margin: 0 auto;
+    }
+    
+    section {
+        width: 95%;
+    }
+    section header {
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    
+    * {
+        font-size: 10px;
+    }
+
+    .navBar{
+        padding-top: 6px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 3px;
+      }
+    .leftContent {
+        width: 30%;
+    }
+
+    .listHeader {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-bottom: 0px;
+        padding-top: 5px;    }
+
+    .mainHeader {
+        width: 95%;
+    }
+    
+    section {
+        width: 95%;
+    }
+
+    section header {
+        font-size: 15px;
+    }
+
+    section iframe {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    * {
+        font-size: 15px;
+    }
+
+    .navBar{
+        padding-top: 6px;
+    }
+
+   
+    .leftContent {
+        width: 29%;
+    }
+
+    .listHeader {
+        font-size: 18px;
+        padding-left: 8px;
+        padding-bottom: 1px;
+        padding-top: 5px;    }
+
+    .mainHeader {
+        width: 95%;
+    }
+    
+    section {
+        width: 95%;
+    }
+
+    section header {
+        font-size: 20px;
+    }
+
+    section iframe {
+        height: 170px;
+    }
+}
